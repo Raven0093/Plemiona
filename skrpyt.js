@@ -1,8 +1,8 @@
 javascript:
 var infoVillageUrl = window.location.href.split("&")[0] + "&screen=info_village&id=";
 var allyNames = {}
-allyNames.friendAlly = [];
-allyNames.enemyAlly =[];
+allyNames.friendAlly = ["Angry Carrots"];
+allyNames.enemyAlly =["Friends"];
 var minDistance = 10;
 var ingoredVillages = "";
 var forumTable = "";
@@ -82,10 +82,12 @@ function fillDistance(village, villageIndex,playerIndex){
 	var tmpEnemyCoord = {};
 	for (index = 0; index < enemyVillages.length; index++){
 		distance = getDistance(village.coord, enemyVillages[index])
-		if(distance <= tmpDistance){
-			tmpDistance = distance;
-			tmpEnemyCoord = enemyVillages[index];
+		if(distance <=minDistance){
 			village.closeEnemies++;
+		}
+		if(distance < tmpDistance){
+			tmpDistance = distance;
+			tmpEnemyCoord = enemyVillages[index];			
 		}
 	}
 	village.distance = tmpDistance;
