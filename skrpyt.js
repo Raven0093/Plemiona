@@ -1,8 +1,8 @@
 javascript:
 var infoVillageUrl = window.location.href.split("&")[0] + "&screen=info_village&id=";
 var allyNames = {}
-allyNames.friendAlly = ["Angry Carrots"];
-allyNames.enemyAlly =["Friends"];
+allyNames.friendAlly = [];
+allyNames.enemyAlly =[];
 var minDistance = 10;
 var ingoredVillages = "";
 var forumTable = "";
