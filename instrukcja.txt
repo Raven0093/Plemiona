@@ -1,0 +1,37 @@
+Instrukcja obsługi:
+Skrypt ma na celu wspomóc tworzenie list wiosek frontowych podczas walki plemion. 
+
+Pola:
+1. Plemiona sojusznicze - nazwy plemion, których wioski mają być na końcowej liście.
+2. Plemiona wrogie - nazwy wrogich plemion.
+3. Maksymalna odległość między wioskami - maksymalna odległość w polach miedzy wioską plemiona sojuszniczego a wrogiego.
+4. Wioski wroga do pominięcia - wioski wroga, które mają być nie brane pod uwagę podczas tworzenia listy. Ważne aby w to miejsce wpisywać wioski otoczone przez wioski plemion sojuszych.
+
+Przyciski:
+1. Rozpocznij pracę skryptu
+2. Wyświetl tabele - wyświetla stworzoną tabele w BB-Code możliwą do wklejenia na forum plemienia.
+3. Wyświetl tabele - wyświetla stworzoną listę wiosek przedzielonych znakiem ";"'
+4. Dodaj plemie do listy - dodaje wpisaną nazwe plemienia do listy wrogich/sojuszniczych plemion.
+5. usuń - możeliwe jest usunięcie poszczególnego plemienia z listy.
+
+Stworzona tabela:
+[table][**]Gracz[||]Wioska[||]Licz. blis. wrogów[||]Odległ->[||]Najbliższa wioska wroga[||]Ilość stacjonujących paczek[/**]
+[/table]
+
+Kolumny:
+1. Gracz - nick gracza
+2. Wioska - 2ioska gracza
+3. Licz. blis. wrogów - liczba wrógów w zadane odległości (odległość <= Maksymalna odległość między wioskami)
+4. Odległ-> - odległość do nabliższej wioski wroga
+5. Najbliższa wioska wroga
+6. Ilość stacjonujących paczek - miejsce przeznaczone do wisywania ilości deffa stacjonującego w wiosce.
+
+Użytkowanie:
+1. Włącz skrypt
+2. Wpisz dodaj nazwy plemion sojuszniczych oraz wrogich
+3. Wpisz ogległość maksymalną
+4. Wpisz wioski wroga, które mają być pominięte (Opcjonalnie)
+5. Przesuwaj mapę tak aby wszystkie wioski plemion wrogich oraz sojuszniczych były w obrębie "dużej" mapy - Lista coordów wiosek na mapie jest zapisywana w odległości 30x30 od środka znacznika. Jeżeli linia brzegowa plemion jest długa należy przesunąć po całości tego obszaru.
+6. Rozpocznij obliczanie za pomocą przycisku - "Rozpocznij prace skryptu"
+7. Wyświetli się tabela do wklejenia na forum, po jej zamknięciu możemy wyświetlić ją jeszcze raz "Wyświetl tabele" lub wyświetlić samą listę wiosek "Wyświetl liste"
+8. Po ponowyn rozpoczęciu obliczania wszystkie dotychczasowe obliczenia zostają usunięte.
